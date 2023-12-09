@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resort</title>
+    <link rel="icon" href="IMAGES/" type="image/png">
+    <!-- CSS -->
+    <link rel="stylesheet" href="admin.css">
+    <!-- BOX ICONS -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <style>
+        body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.faq-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+.question {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+h3 {
+    margin-bottom: 10px;
+    color: #555;
+}
+
+p {
+    color: #777;
+}
+
+.btn {
+    padding: 10px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #2980b9;
+}
+
+    </style>
+
+</head>
+
+  <body>
+    <!-- Navigation bar -->
+    <header>
+        <a href="ap_resort.html" class="logo">
+            <img src="images/log.png" alt="logohere">
+        </a>
+        <!-- Menu-Icon -->
+        <i class="bx bx-menu" id="menu-icon"></i>
+        <!-- Links -->
+        <ul class="navbar">
+            <li><a href="#about">About us</a></li>
+            <li><a href="#activities">Activities</a></li>
+            <li><a href="#customers">Reviews</a></li>
+            <li><a href="#"></a></li>
+        </ul>
+        <!-- Icons -->
+        <div class="header-icon">
+            <a href="#">
+                <iconify-icon icon="mdi-light:logout" style="color: white;"></iconify-icon>
+            </a>
+
+            <i class='' id="search-icon"></i>
+        </div>
+        <!-- Search Box -->
+    </header>
+       <!--Home-->
+       <section class="home" id="home">
+        <div class="home-text">
+            <h1>WLECOME<br> ADMIN</h1>
+            
+            
+        </div>
+        <div class="home-img">
+            </div>
+    </section>
+
+    <!-- reservation Section -->
+    <section class="faq" id="faq">
+        <div class="faq-container">
+            <h2>Frequently Asked Questions</h2>
+    
+            <div class="question">
+                <h3>Q1: How many rooms are booked?</h3>
+                
+                <button class="btn">View Details</button>
+            </div>
+    
+            <div class="question">
+                <h3>Q2: How many AC rooms are available?</h3>
+                <p>We have 20 AC rooms available for booking.</p>
+                <button class="btn">Book AC Room</button>
+            </div>
+    
+            <div class="question">
+                <h3>Q3: How many non-AC rooms are available?</h3>
+                <p>We have 30 non-AC rooms available for booking.</p>
+                <button class="btn">Book Non-AC Room</button>
+            </div>
+        </div>
+    </section>    
+
+    <!-- Products Section -->
+    <section class="products" id="activities">
+        <div class="heading">
+            <h2>Our Activities</h2>
+        </div>
+        <!-- Container -->
+        <div class="products-container">
+            <!-- Add your product boxes here -->
+        </div>
+    </section>
+
+    <!-- Customers Section -->
+    <section class="customers" id="customers">
+        <div class="heading">
+            <h2>Our customers' review</h2>
+        </div>
+        <!-- Container -->
+        <div class="customers-container">
+            <!-- Add your customer review boxes here -->
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <section class="footer">
+        <!-- Add your footer content here -->
+    </section>
+
+    <!-- Copyright Section -->
+    <div class="copyright">
+        <p>&#169; COPYRIGHT AP RESORT.</p>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

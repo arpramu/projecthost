@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Room Search</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('https://aws.wideinfo.org/toptravelgram.com/wp-content/uploads/2022/02/13121455/hotel-room-marina-bay-sands.jpg'); /* Replace 'background.jpg' with your image file */
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .search-container {
+            max-width: 400px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            background-color: rgba(255, 255, 255, 0.8);
+            
+        }
+
+        input, select {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+        }
+        a{
+        text-decoration:none;
+       
+       }
+       #back{
+        color: white;
+        background-color: rgb(226, 43, 165);
+       }
+    </style>
+</head>
+<body>
+
+<div class="search-container">
+    <h2>Room Search</h2>
+    <form action="room_search_result.php" method="post">
+        <label for="room_category">Room Category:</label>
+        <select name="room_category">
+            <option value="economy">Economy</option>
+            <option value="luxury">Luxury</option>
+        </select>
+
+        <label for="room_size">Room Size:</label>
+        <select name="room_size">
+            <option value="small">Small</option>
+            <option value="large">Large</option>
+        </select>
+
+        <label for="airconditioner">Air Conditioner:</label>
+        <select name="airconditioner">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+        </select>
+
+        <label for="swimmingpool">Swimming Pool:</label>
+        <select name="swimmingpool">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+        </select>
+
+        <input type="submit" value="Search">
+    </form>
+    <button id="back"><a href="user.php">Back</a></button>
+</div>
+
+
+</body>
+</html>

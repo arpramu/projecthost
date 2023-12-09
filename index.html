@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Login</title>
+    <style>
+        body {
+            background-image: url('https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bHV4dXJ5JTIwcmVzb3J0fGVufDB8fDB8fHww'); /* Replace 'background.jpg' with your image file */
+            background-size: cover;
+            font-family: Arial, sans-serif;
+        }
+
+        .login-container {
+            max-width: 400px;
+            margin: auto;
+            background: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            margin-top: 100px;
+        }
+
+        input[type="text"], input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<div class="login-container">
+    <h2>Admin Login</h2>
+    <!-- Set the action attribute to the PHP script -->
+    <form id="loginForm" method="post">
+        <label for="username">Username:</label>
+        <input type="text" name="username" required>
+
+        <label for="password">Password:</label>
+        <input type="password" name="password" required>
+
+        <input type="submit" value="Login">
+    </form>
+
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent the form from submitting normally
+
+            // Get the values from the form
+            var username = document.getElementsByName('username')[0].value;
+            var password = document.getElementsByName('password')[0].value;
+
+            // Check the username and password
+            if ((username === 'arun' && password === '123')||(username === 'kumar' && password === '123')||(username === 'muthu' && password === '123')) {
+                // Redirect to another page
+                window.location.href = 'admin.php';
+            } else {
+                // Handle invalid credentials (show an error message, etc.)
+                alert('Invalid username or password');
+            }
+        });
+    </script>
+</div>
+
+</body>
+</html>
